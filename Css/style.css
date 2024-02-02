@@ -57,15 +57,17 @@ body {
 
 .header ul li {
     padding: 10px;
+
 }
 
 .header ul li a {
     text-decoration: none;
-    color: black;
+    color: #445F41;
+
 }
 
 .header .logo span:first-child {
-    color: black;
+    color: #445F41;
 }
 
 .header .logo span:last-child {
@@ -73,7 +75,18 @@ body {
 }
 
 .header ul li a:hover {
+    color: black;
+}
+#switch{
+    display: block;
+    margin-top: 11px;
+    margin-left: 10px;
+    font-size: 15px;
     color: #445F41;
+}
+#switch:hover{
+    color: black;
+    cursor: pointer;
 }
 
 @media(max-width:767px) {
@@ -96,11 +109,7 @@ body {
         color: #200E3A;
     }
 
-    .header i:hover+ul {
-        display: block;
-    }
-
-    .header ul:hover {
+    .header ul.active{
         display: block;
     }
 
@@ -145,7 +154,7 @@ body {
 /* start Services */
 
 .services-parent h1 {
-    color: #200E3A;
+    color: #3e573b;
     letter-spacing: 3px;
     text-align: center;
     margin: 35px;
@@ -153,7 +162,7 @@ body {
 
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     text-align: center;
     gap: 10px;
     padding: 0 10px 10px 10px;
@@ -185,7 +194,7 @@ body {
 /* end  Services */
 /* start about */
 .about-parent h1{
-    color: #200E3A;
+    color: #3e573b;
     letter-spacing: 3px;
     text-align: center;
     margin: 35px;
@@ -207,9 +216,12 @@ body {
 }
 .about .text p{
     text-align: justify;
+    color: #445F41;
+    font-weight: bold;
 }
 .about .text button{
     width: 60%;
+    font-weight: bold;
     background-color:#445F41 ;
     border: none;
     padding: 7px;
@@ -220,7 +232,7 @@ body {
 
 /* start projects */
 .projects-parent h1{
-    color: #200E3A;
+    color: #3e573b;
     letter-spacing: 3px;
     text-align: center;
     margin: 35px;
@@ -230,8 +242,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit , 300px);
     justify-content: center;
-    gap: 10px;
-    
+    gap: 10px;  
 }
 .projects div{
     background-color: beige;
